@@ -28,6 +28,7 @@ public:
 	void changeDir(const QString&);
 	void getFile(const QString&);
         void putFile(QIODevice*, const QString&);
+        void delFile(const QString & file);
 signals:
 	void cmdConncted(bool isconnect);
 	void cmdGot(bool error);

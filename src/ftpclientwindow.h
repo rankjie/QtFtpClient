@@ -6,6 +6,7 @@
 #include "ui_ftpclientwindow.h"
 #include "ftpclient.h"
 
+
 class FtpClientWindow : public QDialog,    Ui::FtpClientWindowClass
 {
     Q_OBJECT
@@ -33,6 +34,8 @@ private slots:
         void onPut(bool);
 	void onList(bool);
         //void onTopDir(bool);
+        void on_delbutton_clicked();
+
 private:
 	FtpClient* ftpClient;
 };

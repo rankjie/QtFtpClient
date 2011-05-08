@@ -35,6 +35,7 @@ void FtpClient::ftpConnect()
 	}
 	else {
 		ftp->abort();
+                ftpStatus = tr("与服务器连接已断开");
 		ftp->deleteLater();
 		ftp = NULL;
 		emit cmdConncted(false);
@@ -169,4 +170,9 @@ void FtpClient::updateDataTransferProgress(qint64 readBytes,qint64 totalBytes)
 	progressDialog->setMaximum(totalBytes);
 	progressDialog->setValue(readBytes);
 
+}
+
+void FtpClient::delFile(const QString &file)
+{
+    ftp->remove(file);
 }

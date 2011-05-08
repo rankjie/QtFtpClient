@@ -72,7 +72,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>状态栏</string>
+      <string>请先在设置中设置用户名及密码</string>
      </property>
     </widget>
     <widget class="QPushButton" name="downLoadPB">
@@ -142,7 +142,7 @@
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>280</x>
+       <x>0</x>
        <y>270</y>
        <width>141</width>
        <height>16</height>
@@ -150,6 +150,19 @@
      </property>
      <property name="text">
       <string>Preview v0.3 @BISTU</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delbutton">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>260</y>
+       <width>95</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除</string>
      </property>
     </widget>
    </widget>
@@ -273,6 +286,9 @@ p, li { white-space: pre-wrap; }
       <font>
        <pointsize>12</pointsize>
       </font>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
      </property>
     </widget>
     <widget class="QLineEdit" name="displayTextEdit">
